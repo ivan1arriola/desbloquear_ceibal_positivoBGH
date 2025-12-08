@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Desbloquear BIOS (Ceibal)
+Comment=Asistente grafico para flashear BIOS
+Exec=/bin/bash -lc 'DIR=$(dirname "$(readlink -f "%k")"); chmod +x "$DIR/desbloquear.sh"; "$DIR/desbloquear.sh"'
+Terminal=false
+Icon=computer
+Categories=Utility;
+StartupNotify=true
+TryExec=/bin/bash
